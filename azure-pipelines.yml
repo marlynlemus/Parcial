@@ -10,7 +10,7 @@ pool:
   vmImage: 'windows-latest'
 
 variables:
-  solution: '**/*.sln'
+  solution: '**/*.als'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
@@ -31,7 +31,7 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
-    solution: '**\*.sln' 
+    solution: '**\*.als' 
     #vsVersion: 'latest' # Optional. Options: latest, 16.0, 15.0, 14.0, 12.0, 11.0
     #msbuildArgs: # Optional
     #platform: # Optional
